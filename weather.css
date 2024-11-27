@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(171, 169, 190);
+    padding: 1rem 5rem;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, rgba(82, 100, 138, 0.717), rgba(67, 116, 214, 0.679)), url('./background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background image fixed */
+    text-transform: capitalize;
+    margin: 0; /* Removes extra margin */
+    overflow-y: auto; /* Ensures scrollability */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: black;
+    text-decoration: underline;
+}
+
+#input {
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: white;
+}
+
+#search {
+    background: rgb(74, 161, 222);
+    color: aliceblue;
+    font-size: 17px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.weather {
+    text-align: center;
+    color: rgb(229, 255, 0);
+}
+
+#city {
+    font-size: 30px;
+}
+
+.weather img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(72, 182, 182, 0.408);
+}
+
+#temperature {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+#clouds {
+    font-size: 20px;
+    background: rgba(50, 148, 205, 0.778);
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    color: white;
+}
+
+.forecstH, .forecstD {
+    margin: 20px 50px;
+    color: whitesmoke;
+}
+
+.templist, .weekF {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.templist .next, .weekF .dayF {
+    background: rgba(74, 161, 222, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.desc {
+    color: rgb(82, 221, 231);
+}
+
+.cast-header {
+    background: rgba(254, 189, 132, 0.539);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.divider1, .divider2 {
+    background: rgba(254, 189, 132, 0.539);
+    height: 5px;
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+footer h3 a {
+    color: white;
+    text-decoration: none;
+}
